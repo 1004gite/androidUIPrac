@@ -71,7 +71,7 @@ class WebtoonFragment : Fragment() {
 ////            LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, heightFragment)
 //            CoordinatorLayout.LayoutParams(CoordinatorLayout.LayoutParams.MATCH_PARENT, heightFragment)
 //        binding.testRecycler.adapter = testRecyclerAdapter()
-        (activity as AppCompatActivity).setSupportActionBar(binding.toolbar)
+//        (activity as AppCompatActivity).setSupportActionBar(binding.toolbar)
 
 
 //        Log.e(
