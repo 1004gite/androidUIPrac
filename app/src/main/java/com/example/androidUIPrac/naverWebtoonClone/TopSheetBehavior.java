@@ -1,4 +1,4 @@
-package com.example.androidUIPrac;
+package com.example.androidUIPrac.naverWebtoonClone;
 
 import android.content.Context;
 import android.content.res.TypedArray;

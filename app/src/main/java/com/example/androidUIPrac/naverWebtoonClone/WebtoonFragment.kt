@@ -1,4 +1,4 @@
-package com.example.androidUIPrac
+package com.example.androidUIPrac.naverWebtoonClone
 
 import android.annotation.SuppressLint
 import android.graphics.Color
@@ -13,15 +13,16 @@ import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.androidUIPrac.databinding.FragmentWebtoonBinding
+import com.example.androidUIPrac.R
+import com.example.androidUIPrac.databinding.WebtoonContentFragmentBinding
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 class WebtoonFragment : Fragment() {
 
-    lateinit var binding: FragmentWebtoonBinding
+    lateinit var binding: WebtoonContentFragmentBinding
     val tabTexts = arrayListOf<String>("신작", "월", "화", "수", "목", "금", "토", "일", "매일+", "완결")
-    val frags = Array(tabTexts.size){ListFragment()}
+    val frags = Array(tabTexts.size){ ListFragment() }
 
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreateView(
@@ -29,7 +30,7 @@ class WebtoonFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         var bottomNavHeight: Int = arguments?.getInt("bottomNavHeight") ?: 150
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_webtoon, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.webtoon_content_fragment, container, false)
         binding.viewPager.adapter = MyPagerAdapter(requireContext() as FragmentActivity)
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
             tab.text = tabTexts[position]
@@ -120,30 +121,4 @@ class WebtoonFragment : Fragment() {
 
 
     }
-
-//    class testRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-//
-//        val list = mutableListOf<Int>().apply { repeat(100){add(it)} }
-//
-//        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): testRecyclerViewHolder {
-//            val testView = TextView(parent.context).apply {
-//                layoutParams = CoordinatorLayout.LayoutParams(CoordinatorLayout.LayoutParams.MATCH_PARENT,50)
-//            }
-//            return testRecyclerViewHolder(testView)
-//        }
-//
-//        override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-//            (holder as testRecyclerViewHolder).bind(list[position])
-//        }
-//
-//        override fun getItemCount(): Int {
-//            return list.size
-//        }
-//
-//        class testRecyclerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-//            fun bind(num: Int) {
-//                (itemView as TextView).text = num.toString()
-//            }
-//        }
-//    }
 }

@@ -1,4 +1,4 @@
-package com.example.androidUIPrac
+package com.example.androidUIPrac.naverWebtoonClone
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,19 +8,20 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.androidUIPrac.databinding.FragmentListBinding
+import com.example.androidUIPrac.R
+import com.example.androidUIPrac.databinding.WebtoonListFragmentBinding
 
 
 class ListFragment : Fragment() {
 
-    lateinit var binding: FragmentListBinding
+    lateinit var binding: WebtoonListFragmentBinding
     var dontMove = true
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_list, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.webtoon_list_fragment, container, false)
         arguments?.let {
 //            binding.testView.setBackgroundColor(it.getInt("Color"))
         }
@@ -45,7 +46,7 @@ class ListFragment : Fragment() {
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder {
-            val binding = LayoutInflater.from(parent.context).inflate(R.layout.item_listview,null)
+            val binding = LayoutInflater.from(parent.context).inflate(R.layout.webtoon_list_item,null)
             return viewHolder(binding.rootView)
         }
 
