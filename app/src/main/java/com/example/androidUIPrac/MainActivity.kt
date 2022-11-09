@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
 import com.example.androidUIPrac.coordinatorLayout.CoordinatorPracFragment
 import com.example.androidUIPrac.databinding.ActivityMainBinding
+import com.example.androidUIPrac.motionLayout.MotionLayout2
 import com.example.androidUIPrac.motionLayout.MotionLayoutPrac
 import com.example.androidUIPrac.naverWebtoonClone.WebtoonMainFrag
 
@@ -39,8 +40,8 @@ class MainActivity : AppCompatActivity() {
 
     inner class MyAdap: RecyclerView.Adapter<MyAdap.Myvh>(){
 
-        val list = arrayOf("네이버웹툰 ui","coordinator","motionLayout 연습")
-        val fragList = arrayOf(WebtoonMainFrag(), CoordinatorPracFragment(), MotionLayoutPrac())
+        val list = arrayOf("네이버웹툰 ui","coordinator","motion연습2","motionLayout 연습")
+        val fragList = arrayOf(WebtoonMainFrag(), CoordinatorPracFragment(), MotionLayout2(), MotionLayoutPrac())
 
         inner class Myvh(itemView: View) : RecyclerView.ViewHolder(itemView){
             fun bind(text: String, frag: Fragment){

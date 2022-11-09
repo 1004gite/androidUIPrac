@@ -19,6 +19,7 @@ class MotionLayoutPrac: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(inflater,R.layout.motionlayout_prac_fragment,container, false)
+
         return binding.root
     }
 }

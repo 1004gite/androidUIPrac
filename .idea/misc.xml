@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.12350119904076738" />
         <entry key="../../ushA/MyNaverWebtoon/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.1735" />
         <entry key="../../ushA/MyNaverWebtoon/app/src/main/res/layout/activity_main.xml" value="0.28072916666666664" />
         <entry key="../../ushA/MyNaverWebtoon/app/src/main/res/layout/fragment_list.xml" value="0.28072916666666664" />
@@ -15,8 +16,10 @@
         <entry key="app/src/main/res/layout/fragment_list.xml" value="0.28072916666666664" />
         <entry key="app/src/main/res/layout/fragment_webtoon.xml" value="0.28072916666666664" />
         <entry key="app/src/main/res/layout/item_listview.xml" value="0.28072916666666664" />
+        <entry key="app/src/main/res/layout/motionlayout_2_fragment.xml" value="0.28072916666666664" />
         <entry key="app/src/main/res/layout/motionlayout_prac_fragment.xml" value="0.23385416666666667" />
         <entry key="app/src/main/res/layout/webtoon_main_fragment.xml" value="0.2328125" />
+        <entry key="app/src/main/res/xml/scene_01.xml" value="0.13072916666666667" />
       </map>
     </option>
   </component>
